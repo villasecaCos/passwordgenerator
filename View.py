@@ -3,35 +3,40 @@
 """
 Created on Wed Mar 17 07:35:48 2021
 
+The View is reponsible of displaying the information.
+The View includes several checkboxes, one entry, one spinbox, and buttons
+along with descriptive labels if necessary. 
+
 @author: juan Villaseca
-View class implements GUI with library tkinter.
-GUI has checkboxes, field(label + entry),  label + spinbox, 2 buttons, label
-The widgets above are in order and they all are arranged inside a frame.
+
 """
 
 import tkinter as tk
 
 class View(tk.Tk):
     
-    
-    WINDOW_SIZE = ['300','250']#in pixels
+
+    #string names for the checkboxes, labels, and spinbox 
+    ckbs_labels = ['Numbers','Uppercase','Special']
+    ent_label = 'Keyword'
+    spb_label = 'Length'
+    #Panel geometry
+    WINDOW_SIZE = ['500','500']#[x,y] in pixels
     PADX = 5 #horizontal distance between 2 widgets
     PADY = 5 #vertical distance between 2 widgets
+    # options for widgets
     READONLY = 'readonly'#block write mode in widgets
     
-    def __init__(self, controller,title, ckbs_names, field_name, spin_name): 
+    def __init__(self, controller): 
         super().__init__()#inherits from TK 
         self.controller = controller
-        self.geometry('x'.join(View.WINDOW_SIZE))#set the dimension of the window  
-        self.title(title)#set the title of the main window      
-        self.ckbs_names = ckbs_names
-        self.ckbs_vars = self.create_dict(ckbs_names)
-        self.field_name = field_name
+        self.title = 'Password generator'
+        self.geometry('x'.join(View.WINDOW_SIZE))#set the dimension of the windo
+        self.ckbs_vars = self.create_dict(self.ckbs_labels)
         self.field_var = tk.StringVar()
-        self.spin_name = spin_name
         self.spin_var = tk.StringVar()
         self.lbl = None #label to display new password
-        self.image = None#image on top of the copy button
+        self.image_copy = None#image on top of the copy button
         self.create_panel()
         
     def display_panel(self):
@@ -92,12 +97,12 @@ class View(tk.Tk):
     def notify_controller(self):
         self.print_ckbs_status()
         print('Notifying updates to controller...')
-        self.controller.generate_password(self.get_ckbs_status(),self.get_field_status(),self.get_spinbox_status())
+        self.controller.generate_password(self.field_var, self.ckbs_vars,self.spin_var )
 
     #Event method
     # notifies and applies for the current password 
     def copy_password(self):
-        current_password = self.controller.get_current_password()
+        current_password = getattr(self.controller, 'current_password')
         if current_password is None:
             print('ERROR: No password to be copied')
         else:
@@ -110,49 +115,34 @@ class View(tk.Tk):
     def create_panel(self):
         print('Making window...')
         #create widgets
-        for i in self.ckbs_names:
+        for i in self.ckbs_labels:
             self.add_checkbox(i)
-        self.add_field(self.field_name)
-        self.add_spinbox(self.spin_name,6,30)
-        #frame for the buttons
+        self.add_field(self.ent_label)
+        self.add_spinbox(self.spb_label,6,30)
+         # Button to save config and generate password
+        btn = tk.Button(master = self, text = "generate password",command = self.notify_controller)
+        btn.pack(pady = View.PADY)
+        #frame for label and copy button
         frm = tk.Frame(master=self)
         frm.pack()
-        # Button to save config and generate password
-        btn = tk.Button(master = frm, text = "generate password",command = self.notify_controller)
-        btn.pack(side=tk.LEFT,pady = View.PADY, padx = View.PADX)
+        #Label for the generated password
+        self.lbl = tk.Label(master = self,text='')   
+        self.lbl.pack(side=tk.LEFT, pady = View.PADY,padx = View.PADX)
+       
         # Button to save config and generate password
         self.image  = tk.PhotoImage(file = "images/copy3.png", master = frm)
         btn_copy = tk.Button(master = frm, command = self.copy_password, height = 23, 
           width = 23, image = self.image)
         btn_copy.pack(side=tk.LEFT,pady = View.PADY)
-        #Label for the generated password
-        self.lbl = tk.Label(master = self,text='')   
-        self.lbl.pack(pady = View.PADY)
-        
+               
     def error(self,error_code):
         if(error_code == 0):
             print('Not password available to copy')
             
-    # getter for the checkboxes states
-    def get_ckbs_status(self):
-        return self.ckbs_vars
-    
-    #getter for the keyword value
-    def get_field_status(self):
-        return self.field_var
-    
-    #getter for the spinbox value
-    def get_spinbox_status(self):
-        return self.spin_var
-    
-    #setter for the password label
-    def set_password_lbl(self,new_password):
-        self.lbl['text'] = new_password
-        
     def print_ckbs_status(self):
         for key,value in self.ckbs_vars.items():
             print('checkbutton {} state {}'.format(key,value.get()))
 
 if __name__ == '__main__':
-    view = View(None, 'view', ['ck1','ck2','ck2'], 'field','spinbox')
+    view = View(None)
     view.display_panel()

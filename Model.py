@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Mar 19 15:30:36 2021
-
+Stores the user prerences for the passwords,
+and the seed charsets to be input to the password generation process. 
 @author: juan Villaseca
 """
 

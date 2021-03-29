@@ -3,6 +3,10 @@
 """
 Created on Tue Mar 16 16:07:35 2021
 
+The controller collects the preferences of the user from the View,
+collect the value of that preferences of the Model and creates a new
+password. 
+
 @author: juan Villaseca
 """
 
@@ -11,15 +15,10 @@ from Model import Model
 import random
 
 class Controller():
-    # title and view labels for the view
-    title = 'Password generator'
-    checkbox_labels = ['Numbers','Uppercase','Special']
-    entry_label = 'Keyword'
-    spinbox_label = 'Length'
     
     def __init__(self):
         self.model = Model(self)
-        self.view = View(self, self.title, self.checkbox_labels, self.entry_label,self.spinbox_label)
+        self.view = View(self)
         #store the current password shown in the view
         self.current_password = None
     
@@ -28,11 +27,11 @@ class Controller():
         self.view.display_panel()
     
     # generate password pipeline
-    def generate_password(self,ckbs_status,field_status,spinbox_status):
+    def generate_password(self,ckbs,field,spinbox):
         #collecting parameteres from the view
-        keyword = field_status.get()
-        final_set = self.build_set(ckbs_status)
-        length = int(spinbox_status.get())
+        keyword = field.get()
+        final_set = self.build_set(ckbs)
+        length = int(spinbox.get())
         #compute new password 
         new_password = self.compute_password(keyword,final_set,length)
         print('New password generated')
@@ -60,11 +59,7 @@ class Controller():
             index = random.randint(0,len(charset)-1)
             new_password += charset[index]
         return new_password
-    
-    # getter for the current_password attribute
-    def get_current_password(self):      
-        return self.current_password
-                
+                 
 
 if __name__ == '__main__':
      controller = Controller()
