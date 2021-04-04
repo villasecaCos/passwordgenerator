@@ -25,7 +25,7 @@ class Relayer():
     
     def start(self):
         #creates the GUI for the user
-        self.view.display_panel()
+        self.main_frame.display_panel()
     
     # generate password pipeline
     def generate_password(self,ckbs,field,spinbox):

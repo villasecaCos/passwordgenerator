@@ -11,16 +11,15 @@ The MainFrame contain all the second level frames.
 """
 
 import tkinter as tk
-import os
+from view.panel_ckbs import PanelCkbs
+
 
 class MainFrame(tk.Tk):
     
-    #string names for the checkboxes, labels, and spinbox 
-    ckbs_labels = ['Numbers','Uppercase','Special']
     ent_label = 'Keyword'
     spb_label = 'Length'
     #Panel geometry
-    WINDOW_SIZE = ['500','500']#[x,y] in pixels
+    WINDOW_SIZE = ['400','400']#[x,y] in pixels
     PADX = 5 #horizontal distance between 2 widgets
     PADY = 5 #vertical distance between 2 widgets
     # options for widgets
@@ -31,7 +30,7 @@ class MainFrame(tk.Tk):
         self.controller = controller
         self.title = 'Password generator'
         self.geometry('x'.join(MainFrame.WINDOW_SIZE))#set the dimension of the windo
-        self.ckbs_vars = self.create_dict(self.ckbs_labels)
+        self.panel_ckbs = None
         self.field_var = tk.StringVar()
         self.spin_var = tk.StringVar()
         self.lbl = None #label to display new password
@@ -41,13 +40,7 @@ class MainFrame(tk.Tk):
     def display_panel(self):
         #renders the GUI
         self.mainloop()
-               
-    #Initialize checkboxes variables to store their states
-    def create_dict(self, keys):
-        dic = dict()
-        for key in keys:
-            dic[key] = tk.IntVar()
-        return dic
+              
     
     #create a label and entry wideget in the root window
     def add_field(self,name):
@@ -61,16 +54,7 @@ class MainFrame(tk.Tk):
          # place the entry at the right side of the label
          lbl_pattern.pack(side=tk.LEFT)
          ent_pattern.pack(side=tk.LEFT)
-         
-    # create checkbox widget in the root window
-    def add_checkbox(self,name):
-        #container for checkbox
-        frm = tk.Frame(master=self)
-        #add frame to the window
-        frm.pack(padx = MainFrame.PADX,pady = MainFrame.PADY)
-        ck_numbers = tk.Checkbutton(master = frm, text=name, onvalue=1, offvalue=0,variable = self.ckbs_vars[name],command=self.notify)
-        ck_numbers.pack()
-      
+          
     # create label and spinbox widget in the root window
     def add_spinbox(self,name,from_, to):
         #container for length field
@@ -96,7 +80,8 @@ class MainFrame(tk.Tk):
     def notify_controller(self):
         self.print_ckbs_status()
         print('Notifying updates to controller...')
-        self.controller.generate_password(self.field_var, self.ckbs_vars,self.spin_var )
+        ckbs_vars = getattr(self.ckb_vars,'panel_ckbs')
+        self.controller.generate_password(self.field_var, ckbs_vars,self.spin_var )
 
     #Event method
     # notifies and applies for the current password 
@@ -113,9 +98,7 @@ class MainFrame(tk.Tk):
     #appends all necessary widgets to the root
     def create_panel(self):
         print('Making window...')
-        #create widgets
-        for i in self.ckbs_labels:
-            self.add_checkbox(i)
+        self.panel_ckbs = PanelCkbs(self)
         self.add_field(self.ent_label)
         self.add_spinbox(self.spb_label,6,30)
          # Button to save config and generate password
