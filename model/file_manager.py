@@ -7,7 +7,7 @@ and the seed charsets to be input to the password generation process.
 @author: juan Villaseca
 """
 
-class Model():
+class FileManager():
    
     numbers = '0123456789'
     lowercase = 'abcdefghijklmnopqrstuvwxyz'

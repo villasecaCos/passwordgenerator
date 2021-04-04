@@ -10,15 +10,16 @@ password.
 @author: juan Villaseca
 """
 
-from View import View
-from Model import Model
-import random
+from password import Password
+from view.main_frame import MainFrame
+from model.file_manager import FileManager
 
-class Controller():
+
+class Relayer():
     
     def __init__(self):
-        self.model = Model(self)
-        self.view = View(self)
+        self.model = FileManager(self)
+        self.main_frame = MainFrame(self)
         #store the current password shown in the view
         self.current_password = None
     
@@ -32,13 +33,11 @@ class Controller():
         keyword = field.get()
         final_set = self.build_set(ckbs)
         length = int(spinbox.get())
-        #compute new password 
-        new_password = self.compute_password(keyword,final_set,length)
+         #Create new password and store it
+        self.current_password = Password(keyword,final_set,length)
         print('New password generated')
-        #store new password as current password 
-        self.current_password = new_password
         #update view with the new password
-        self.view.set_password_lbl(new_password)
+        self.main_frame.set_password_lbl(self.current_password.value)
                 
     #queries the model and build the charset to generate new random password
     def build_set(self, ckbs_status):
@@ -49,19 +48,8 @@ class Controller():
                 final_set = final_set + self.model.get_set(key)
         return final_set
     
-    # using random indexes of the charset to build new random password
-    def compute_password(self, keyword, charset, length):
-        new_password = ''
-        if keyword is not None:
-            new_password = keyword
-        #generate the password
-        for i in range(length):
-            index = random.randint(0,len(charset)-1)
-            new_password += charset[index]
-        return new_password
-                 
-
+    
 if __name__ == '__main__':
-     controller = Controller()
+     controller = Relayer()
      controller.start()
      

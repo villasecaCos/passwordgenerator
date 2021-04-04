@@ -3,19 +3,18 @@
 """
 Created on Wed Mar 17 07:35:48 2021
 
-The View is reponsible of displaying the information.
-The View includes several checkboxes, one entry, one spinbox, and buttons
-along with descriptive labels if necessary. 
+The MainFrame is reponsible of displaying the information.
+The MainFrame contain all the second level frames. 
 
 @author: juan Villaseca
 
 """
 
 import tkinter as tk
+import os
 
-class View(tk.Tk):
+class MainFrame(tk.Tk):
     
-
     #string names for the checkboxes, labels, and spinbox 
     ckbs_labels = ['Numbers','Uppercase','Special']
     ent_label = 'Keyword'
@@ -31,7 +30,7 @@ class View(tk.Tk):
         super().__init__()#inherits from TK 
         self.controller = controller
         self.title = 'Password generator'
-        self.geometry('x'.join(View.WINDOW_SIZE))#set the dimension of the windo
+        self.geometry('x'.join(MainFrame.WINDOW_SIZE))#set the dimension of the windo
         self.ckbs_vars = self.create_dict(self.ckbs_labels)
         self.field_var = tk.StringVar()
         self.spin_var = tk.StringVar()
@@ -55,9 +54,9 @@ class View(tk.Tk):
          #container for field
          frm = tk.Frame(master=self)
          #add frame to the window
-         frm.pack(padx = View.PADX, pady = View.PADY)
+         frm.pack(padx = MainFrame.PADX, pady = MainFrame.PADY)
          # master parameter adds a widget to a frame
-         lbl_pattern = tk.Label(master = frm, text=name, padx = View.PADX)
+         lbl_pattern = tk.Label(master = frm, text=name, padx = MainFrame.PADX)
          ent_pattern = tk.Entry(master = frm, textvariable = self.field_var) 
          # place the entry at the right side of the label
          lbl_pattern.pack(side=tk.LEFT)
@@ -68,7 +67,7 @@ class View(tk.Tk):
         #container for checkbox
         frm = tk.Frame(master=self)
         #add frame to the window
-        frm.pack(padx = View.PADX,pady = View.PADY)
+        frm.pack(padx = MainFrame.PADX,pady = MainFrame.PADY)
         ck_numbers = tk.Checkbutton(master = frm, text=name, onvalue=1, offvalue=0,variable = self.ckbs_vars[name],command=self.notify)
         ck_numbers.pack()
       
@@ -77,9 +76,9 @@ class View(tk.Tk):
         #container for length field
         frm = tk.Frame(master=self)
         #add frame to the window
-        frm.pack(padx = View.PADX,pady = View.PADY)
-        lbl = tk.Label(master = frm, text=name, padx = View.PADX)
-        spb = tk.Spinbox(master = frm, from_=from_, to=to, textvariable = self.spin_var, state = View.READONLY)
+        frm.pack(padx = MainFrame.PADX,pady = MainFrame.PADY)
+        lbl = tk.Label(master = frm, text=name, padx = MainFrame.PADX)
+        spb = tk.Spinbox(master = frm, from_=from_, to=to, textvariable = self.spin_var, state = MainFrame.READONLY)
         lbl.pack(side=tk.LEFT)
         spb.pack(side=tk.LEFT)
     
@@ -120,20 +119,24 @@ class View(tk.Tk):
         self.add_field(self.ent_label)
         self.add_spinbox(self.spb_label,6,30)
          # Button to save config and generate password
-        btn = tk.Button(master = self, text = "generate password",command = self.notify_controller)
-        btn.pack(pady = View.PADY)
+        btn = tk.Button(master = self, text = "generate password"
+                        ,command = self.notify_controller)
+        btn.pack(pady = MainFrame.PADY)
         #frame for label and copy button
         frm = tk.Frame(master=self)
         frm.pack()
         #Label for the generated password
         self.lbl = tk.Label(master = self,text='')   
-        self.lbl.pack(side=tk.LEFT, pady = View.PADY,padx = View.PADX)
+        self.lbl.pack(side=tk.LEFT, pady = MainFrame.PADY
+                      ,padx = MainFrame.PADX)
        
         # Button to save config and generate password
-        self.image  = tk.PhotoImage(file = "images/copy3.png", master = frm)
+        #the path from the controller module
+        image_path = './../view/images/copy3.png'
+        self.image  = tk.PhotoImage(file = image_path, master = frm)
         btn_copy = tk.Button(master = frm, command = self.copy_password, height = 23, 
           width = 23, image = self.image)
-        btn_copy.pack(side=tk.LEFT,pady = View.PADY)
+        btn_copy.pack(side=tk.LEFT,pady = MainFrame.PADY)
                
     def error(self,error_code):
         if(error_code == 0):
@@ -144,5 +147,5 @@ class View(tk.Tk):
             print('checkbutton {} state {}'.format(key,value.get()))
 
 if __name__ == '__main__':
-    view = View(None)
+    view = MainFrame(None)
     view.display_panel()
