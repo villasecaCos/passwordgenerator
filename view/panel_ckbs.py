@@ -4,12 +4,11 @@
 Created on Sat Apr  3 07:46:28 2021
 
 @author: juan
-"""
-import tkinter as tk
-'''
+
 This class creates a panel of checkbuttons. Note that the button 
 labels serve as keys to retrieve the state of a checkbutton. 
-'''
+"""
+import tkinter as tk
 
 class PanelCkbs(tk.Frame):
     
@@ -33,6 +32,7 @@ class PanelCkbs(tk.Frame):
         super(). __init__(master=master)
         self.ckbs_vars = self.create_dict(self.button_labels)
         self.create_panel()
+   
         
     #Initialize checkboxes variables to store their states
     def create_dict(self, keys):
@@ -42,8 +42,10 @@ class PanelCkbs(tk.Frame):
         return dic
     
     def create_panel(self):
+        print("Creating checkbuttons panel")
         for label,button_label in zip(self.labels,self.button_labels):
             self.add_checkbox(label,button_label)
+        self.pack()
         
     # create checkbox widget in the root window
     def add_checkbox(self,label,name):

@@ -35,7 +35,7 @@ class MainFrame(tk.Tk):
         self.spin_var = tk.StringVar()
         self.lbl = None #label to display new password
         self.image_copy = None#image on top of the copy button
-        self.create_panel()
+        self.create_window()
         
     def display_panel(self):
         #renders the GUI
@@ -96,8 +96,9 @@ class MainFrame(tk.Tk):
             print('Password copied to clipboard')
             
     #appends all necessary widgets to the root
-    def create_panel(self):
+    def create_window(self):
         print('Making window...')
+        #NOT working
         self.panel_ckbs = PanelCkbs(self)
         self.add_field(self.ent_label)
         self.add_spinbox(self.spb_label,6,30)
@@ -125,10 +126,7 @@ class MainFrame(tk.Tk):
         if(error_code == 0):
             print('Not password available to copy')
             
-    def print_ckbs_status(self):
-        for key,value in self.ckbs_vars.items():
-            print('checkbutton {} state {}'.format(key,value.get()))
-
+    
 if __name__ == '__main__':
     view = MainFrame(None)
     view.display_panel()
