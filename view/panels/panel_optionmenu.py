@@ -27,12 +27,14 @@ class PanelOptionMenu(tk.Frame):
             self.add_optionmenu(label)
         self.pack()
         
-    # create label and spinbox widget in the root window
+    # create label and dropdown menu in the root window
     def add_optionmenu(self,name):
         frm = tk.Frame(master=self)
         frm.pack(padx = self.PADX,pady = self.PADY)
+        #'length' label
         lbl = tk.Label(master=frm, text=name, padx=self.PADX)
         lbl.pack(side=tk.LEFT)
+        #drop-down menu to choose password length
         options = [x for x in range(6,30)]
         opt = tk.OptionMenu(frm, self.length, *options )
         opt.config(width = 20, font=('Helvetica', 10))

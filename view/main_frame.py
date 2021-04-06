@@ -14,6 +14,7 @@ import tkinter as tk
 from view.panels.panel_ckbs import PanelCkbs
 from view.panels.panel_field import PanelField
 from view.panels.panel_optionmenu import PanelOptionMenu
+from view.panels.panel_buttons import PanelButtons
 
 
 class MainFrame(tk.Tk):
@@ -75,24 +76,11 @@ class MainFrame(tk.Tk):
         self.panel_ckbs = PanelCkbs(self)
         self.panel_field = PanelField(self)
         self.panel_scrollbar = PanelOptionMenu(self)
-         # Button to save config and generate password
-        btn = tk.Button(master = self, text = "generate password"
-                     ,command = self.notify_controller)
-        btn.pack(pady = MainFrame.PADY,side=tk.LEFT)
-        #frame for label and copy button
-        frm = tk.Frame(master=self)
-        frm.pack()
+        self.panel_buttons = PanelButtons(self)
         #Label for the generated password
         self.lbl = tk.Label(master = self,text='')   
-        self.lbl.pack(side=tk.LEFT, pady = MainFrame.PADY
-                      ,padx = MainFrame.PADX)
-        # Button to save config and generate password
-        #the path from the controller module
-        image_path = './../view/images/copy3.png'
-        self.image  = tk.PhotoImage(file = image_path, master = frm)
-        btn_copy = tk.Button(master = frm, command = self.copy_password
-                    , height = 23, width = 23, image = self.image)
-        btn_copy.pack(side=tk.LEFT,pady = MainFrame.PADY)
+        self.lbl.pack(side=tk.LEFT, pady = self.PADY
+                      ,padx = self.PADX)
                
     def error(self,error_code):
         if(error_code == 0):
