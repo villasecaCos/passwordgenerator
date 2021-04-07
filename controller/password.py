@@ -15,7 +15,6 @@ class Password():
         self.keyword = keyword
         self.value = self.compute_password(keyword,charset,length)
        
-    
     # using random indexes of the charset to build new random password
     def compute_password(self, keyword, charset, length):
         new_password = ''

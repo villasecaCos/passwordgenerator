@@ -27,9 +27,10 @@ class MainFrame(tk.Tk):
     # options for widgets
     READONLY = 'readonly'#block write mode in widgets
     
-    def __init__(self, controller): 
+    def __init__(self, controller,keys): 
         super().__init__()#inherits from TK 
         self.controller = controller
+        self.keys = keys
         self.title('Password generator')
         self.geometry('x'.join(MainFrame.WINDOW_SIZE))#set the dimension of the windo
         self.panel_ckbs = None
@@ -67,7 +68,7 @@ class MainFrame(tk.Tk):
     #appends all necessary widgets to the root
     def create_window(self):
         print('Making window...')
-        self.panel_ckbs = PanelCkbs(self)
+        self.panel_ckbs = PanelCkbs(self,self.keys)
         self.panel_field = PanelField(self)
         self.panel_opt = PanelOptionMenu(self)
         self.panel_buttons = PanelButtons(self)
@@ -77,6 +78,7 @@ class MainFrame(tk.Tk):
     
     def set_password_lbl(self, new_password):
         self.lbl.config(text=new_password)
+
                
     def error(self,error_code):
         if(error_code == 0):

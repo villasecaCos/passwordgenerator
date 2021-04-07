@@ -9,32 +9,22 @@ and the seed charsets to be input to the password generation process.
 
 class FileManager():
    
-    numbers = {'0','1','2','3','4','5','6','7','8','9'}
-    
-    lowercase = {'a','b','c','d','e','f','g','h'
-                 ,'i','j','k','l','m','n','o','p'
-                 ,'q','r','s','t','u','v','w','x'
-                 ,'y','z'}
-    
-    uppercase = {'A','B','C','D','E','F','G','H','I'
-                 ,'J','K','L','M','N','O','P','Q','R'
-                 ,'S','T','U','V','W','X','Y','Z'}
-    
-    special = {'!','|','#','$','~','%','&','¬','/'
-               ,'(',')','=','?','¿','^','+','*','-'
-               ,'[',']','{','}'}
+    files_Path = '../model/files/'
     
     def __init__(self, controller):
         self.controller = controller
-        
-    #not HARD CODING
+        self.set_space = {}
+        self.load_sets()
+    
+    def load_sets(self):
+        print('Loading file content into FileManager')
+        with open(self.files_Path+'sets.txt','r') as sets:
+            for set_ in sets:
+                key_value = set_.split()
+                self.set_space[key_value[0]] = set(key_value[1])
+      
+
     def get_set(self, key):  
-        if key == '(0,1,2....9)':
-            return self.numbers
-        elif key == '(A,B,C....Z)':
-            return self.uppercase
-        else:
-            return self.special
+        return self.set_space[key]
         
-    def get_lowercase(self):
-            return self.lowercase
+    

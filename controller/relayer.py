@@ -18,10 +18,13 @@ from model.file_manager import FileManager
 class Relayer():
     
     def __init__(self):
-        self.model = FileManager(self)
-        self.main_frame = MainFrame(self)
+        self.file_manager = FileManager(self)
+        keys = getattr(self.file_manager,'set_space').keys()
+        self.main_frame = MainFrame(self,keys)
         #store the current password shown in the view
         self.current_password = None
+        
+        
     
     def start(self):
         #creates the GUI for the user
@@ -45,7 +48,7 @@ class Relayer():
         print('Accessing model sets')
         for key,_var in ckbs_status.items():
             if _var.get() == 1:
-                final_set = final_set.union(self.model.get_set(key))
+                final_set = final_set | self.model.get_set(key)#union of sets
         return final_set
     
     

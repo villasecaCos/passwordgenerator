@@ -28,9 +28,11 @@ class PanelCkbs(tk.Frame):
              '(I,|,O,0..L)',
              ]
      
-    def __init__(self, master):
+    def __init__(self, master,keys):
         super(). __init__(master=master)
-        self.ckbs_vars = self.create_dict(self.button_labels)
+        self.keys = keys
+        print(f'received keys {keys}')
+        self.ckbs_vars = self.create_dict(keys)
         self.create_panel()
    
         
@@ -43,18 +45,18 @@ class PanelCkbs(tk.Frame):
     
     def create_panel(self):
         print("Creating checkbuttons panel")
-        for label,button_label in zip(self.labels,self.button_labels):
-            self.add_checkbox(label,button_label)
+        for label,button_label,key in zip(self.labels,self.button_labels,self.keys):
+            self.add_checkbox(label,button_label,key)
         self.pack()
         
     # create checkbox widget in the root window
-    def add_checkbox(self,label,name):
+    def add_checkbox(self,label,name,key):
         #container for checkbox
         frm = tk.Frame(master=self)
         #create label
         lbl = tk.Label(master = frm, text=label, padx = self.PADX)
         ck_numbers = tk.Checkbutton(master=frm, text=name, onvalue=1
-           ,offvalue=0,variable=self.ckbs_vars[name])
+           ,offvalue=0,variable=self.ckbs_vars[key])
         #add frame to the panel
         frm.pack(padx = self.PADX,pady = self.PADY)
         lbl.pack(side=tk.LEFT,padx = self.PADX)
