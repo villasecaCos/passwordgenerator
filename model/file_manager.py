@@ -10,6 +10,7 @@ and the seed charsets to be input to the password generation process.
 class FileManager():
    
     files_Path = '../model/files/'
+    default = 'abcdefghijklmnopqrstuvwxyz'
     
     def __init__(self, controller):
         self.controller = controller
@@ -21,9 +22,9 @@ class FileManager():
         with open(self.files_Path+'sets.txt','r') as sets:
             for _set in sets:
                 key_value = _set.split()
-                self.set_space[key_value[0]] = set(key_value[1])
+                self.set_space[key_value[0]] = key_value[1]
 
     def get_set(self, key):  
         return self.set_space[key]
-        
+    
     

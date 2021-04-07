@@ -7,6 +7,7 @@ parameters chosen by the user.
 
 @author: juan
 """
+import random
 
 class Password():
     def __init__(self, keyword, charset, length):
@@ -22,7 +23,8 @@ class Password():
             new_password = keyword
         #generate the password
         for i in range(length):
-            new_password += charset.pop()
+            index = random.randint(0,len(charset)-1)
+            new_password += charset[index]
         return new_password
     
     

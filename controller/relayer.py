@@ -42,15 +42,18 @@ class Relayer():
                 
     #queries the model and build the charset to generate new random password
     def build_set(self, ckbs_status):
-        final_set = self.file_manager.get_set('lowercase')
+        final_set = self.file_manager.default
         print('Accessing model sets')
         for key,_var in ckbs_status.items():
-            if _var.get() == 1 and key != 'exlude':
-                final_set = final_set | self.file_manager.get_set(key)#union of sets
+            if _var.get() == 1 and key != 'exclude':
+                final_set += self.file_manager.get_set(key)#union of sets
             elif _var.get() == 1 and key == 'exclude':
-                final_set = final_set.symmetric_difference(self.file_manager.get_set(key))
+                self.exclude_string(final_set, self.file_manager.get_set(key))
         return final_set
     
+    def exclude_string(self, charset, exclude):
+        for x in exclude:
+            charset.replace(x,"")
     
 if __name__ == '__main__':
      controller = Relayer()
