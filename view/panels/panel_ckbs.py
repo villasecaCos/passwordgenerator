@@ -31,7 +31,6 @@ class PanelCkbs(tk.Frame):
     def __init__(self, master,keys):
         super(). __init__(master=master)
         self.keys = keys
-        print(f'received keys {keys}')
         self.ckbs_vars = self.create_dict(keys)
         self.create_panel()
    

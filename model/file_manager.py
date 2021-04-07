@@ -19,10 +19,9 @@ class FileManager():
     def load_sets(self):
         print('Loading file content into FileManager')
         with open(self.files_Path+'sets.txt','r') as sets:
-            for set_ in sets:
-                key_value = set_.split()
+            for _set in sets:
+                key_value = _set.split()
                 self.set_space[key_value[0]] = set(key_value[1])
-      
 
     def get_set(self, key):  
         return self.set_space[key]

@@ -46,7 +46,7 @@ class MainFrame(tk.Tk):
     #Event method
     # notifies and passes all the values to the controller
     def notify_controller(self):
-        print('Notifying updates to controller...')
+        print('Notifying updates to controller')
         ckbs_vars = getattr(self.panel_ckbs,'ckbs_vars')
         keyword_var = getattr(self.panel_field,'field')
         length_var = getattr(self.panel_opt,'length')
@@ -67,7 +67,7 @@ class MainFrame(tk.Tk):
             
     #appends all necessary widgets to the root
     def create_window(self):
-        print('Making window...')
+        print('Making window')
         self.panel_ckbs = PanelCkbs(self,self.keys)
         self.panel_field = PanelField(self)
         self.panel_opt = PanelOptionMenu(self)
