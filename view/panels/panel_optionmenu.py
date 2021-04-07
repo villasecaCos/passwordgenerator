@@ -39,4 +39,5 @@ class PanelOptionMenu(tk.Frame):
         opt = tk.OptionMenu(frm, self.length, *options )
         opt.config(width = 20, font=('Helvetica', 10))
         opt.pack(side=tk.LEFT)
+         
        

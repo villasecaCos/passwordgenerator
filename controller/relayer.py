@@ -28,11 +28,11 @@ class Relayer():
         self.main_frame.display_panel()
     
     # generate password pipeline
-    def generate_password(self,ckbs,field,spinbox):
+    def generate_password(self,keyword_var,ckbs,length_var):
         #collecting parameteres from the view
-        keyword = field.get()
+        keyword = keyword_var.get()
         final_set = self.build_set(ckbs)
-        length = int(spinbox.get())
+        length = length_var.get()
          #Create new password and store it
         self.current_password = Password(keyword,final_set,length)
         print('New password generated')
@@ -45,7 +45,7 @@ class Relayer():
         print('Accessing model sets')
         for key,_var in ckbs_status.items():
             if _var.get() == 1:
-                final_set = final_set + self.model.get_set(key)
+                final_set = final_set.union(self.model.get_set(key))
         return final_set
     
     

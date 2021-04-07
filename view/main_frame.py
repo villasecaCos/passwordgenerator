@@ -33,6 +33,7 @@ class MainFrame(tk.Tk):
         self.title('Password generator')
         self.geometry('x'.join(MainFrame.WINDOW_SIZE))#set the dimension of the windo
         self.panel_ckbs = None
+        self.panel_opt = None
         self.lbl = None #label to display new password
         self.image_copy = None#image on top of the copy button
         self.create_window()
@@ -40,34 +41,27 @@ class MainFrame(tk.Tk):
     def display_panel(self):
         #renders the GUI
         self.mainloop()
-               
-    #Event method
-    def notify(self):
-        print('Event triggered: checkbutton toggle')
-        
-    #Event method
-    def notify_field(self):
-        print('Event triggered: entry update')
-        
+   
     #Event method
     # notifies and passes all the values to the controller
     def notify_controller(self):
         print('Notifying updates to controller...')
         ckbs_vars = getattr(self.panel_ckbs,'ckbs_vars')
-        keyword = getattr(self.panel_field,'field')
-        length = getattr(self.panel_scrollbar,'length')
-        self.controller.generate_password(keyword, ckbs_vars,length )
+        keyword_var = getattr(self.panel_field,'field')
+        length_var = getattr(self.panel_opt,'length')
+        self.controller.generate_password(keyword_var, ckbs_vars,length_var )
 
     #Event method
     # notifies and applies for the current password 
-    def copy_password(self):
+    def copy_password(self): 
         current_password = getattr(self.controller, 'current_password')
+        password_value = getattr(current_password, 'value')
         if current_password is None:
             print('ERROR: No password to be copied')
         else:
             self.clipboard_clear()
             # text to clipboard
-            self.clipboard_append(current_password)
+            self.clipboard_append(password_value)
             print('Password copied to clipboard')
             
     #appends all necessary widgets to the root
@@ -75,12 +69,14 @@ class MainFrame(tk.Tk):
         print('Making window...')
         self.panel_ckbs = PanelCkbs(self)
         self.panel_field = PanelField(self)
-        self.panel_scrollbar = PanelOptionMenu(self)
+        self.panel_opt = PanelOptionMenu(self)
         self.panel_buttons = PanelButtons(self)
         #Label for the generated password
         self.lbl = tk.Label(master = self,text='')   
-        self.lbl.pack(side=tk.LEFT, pady = self.PADY
-                      ,padx = self.PADX)
+        self.lbl.pack(pady = self.PADY, padx = self.PADX)
+    
+    def set_password_lbl(self, new_password):
+        self.lbl.config(text=new_password)
                
     def error(self,error_code):
         if(error_code == 0):

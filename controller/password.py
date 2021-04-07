@@ -7,14 +7,13 @@ parameters chosen by the user.
 
 @author: juan
 """
-import random
 
 class Password():
     def __init__(self, keyword, charset, length):
         self.charset = charset
         self.length = length
         self.keyword = keyword
-        self.value = self.generatePassword(keyword,charset,length)
+        self.value = self.compute_password(keyword,charset,length)
        
     
     # using random indexes of the charset to build new random password
@@ -24,6 +23,8 @@ class Password():
             new_password = keyword
         #generate the password
         for i in range(length):
-            index = random.randint(0,len(charset)-1)
-            new_password += charset[index]
+            new_password += charset.pop()
         return new_password
+    
+    
+        
