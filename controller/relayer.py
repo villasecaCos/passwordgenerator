@@ -46,14 +46,12 @@ class Relayer():
         print('Accessing model sets')
         for key,_var in ckbs_status.items():
             if _var.get() == 1 and key != 'exclude':
-                final_set += self.file_manager.get_set(key)#union of sets
+                #concatenate selected sets
+                final_set = final_set.union(self.file_manager.get_set(key))
             elif _var.get() == 1 and key == 'exclude':
-                self.exclude_string(final_set, self.file_manager.get_set(key))
+                final_set = final_set.symmetric_difference(self.file_manager.get_set(key))
         return final_set
     
-    def exclude_string(self, charset, exclude):
-        for x in exclude:
-            charset.replace(x,"")
     
 if __name__ == '__main__':
      controller = Relayer()

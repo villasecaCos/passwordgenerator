@@ -18,13 +18,13 @@ class Password():
        
     # using random indexes of the charset to build new random password
     def compute_password(self, keyword, charset, length):
-        new_password = ''
+        new_password = ""
         if keyword is not None:
-            new_password = keyword
+            new_password += keyword
         #generate the password
         for i in range(length):
-            index = random.randint(0,len(charset)-1)
-            new_password += charset[index]
+            new_character = random.choice(tuple(charset))
+            new_password += new_character
         return new_password
     
     
