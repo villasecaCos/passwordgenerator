@@ -6,6 +6,7 @@ Created on Mon Apr  5 12:53:46 2021
 @author: juan
 """
 import tkinter as tk
+from tkinter import ttk
 
 class PanelOptionMenu(tk.Frame):
     
@@ -18,8 +19,7 @@ class PanelOptionMenu(tk.Frame):
     
     def __init__(self,master):
         super(). __init__(master=master)
-        self.length = tk.IntVar()
-        self.length.set(self.DEFAULT)
+        self.length = tk.StringVar()
         self.create_panel()
         
     def create_panel(self):
@@ -36,8 +36,9 @@ class PanelOptionMenu(tk.Frame):
         lbl.pack(side=tk.LEFT)
         #drop-down menu to choose password length
         options = [x for x in range(6,30)]
-        opt = tk.OptionMenu(frm, self.length, *options )
-        opt.config(width = 20, font=('Helvetica', 10))
-        opt.pack(side=tk.LEFT)
+        combo = ttk.Combobox(master = frm, textvariable = self.length
+                             , values = options)
+        combo.set(PanelOptionMenu.DEFAULT)
+        combo.pack(side=tk.LEFT)
          
        

@@ -33,12 +33,12 @@ class Relayer():
         #collecting parameteres from the view
         keyword = keyword_var.get()
         final_set = self.build_set(ckbs)
-        length = length_var.get()
+        length = int(length_var.get())
          #Create new password and store it
         self.current_password = Password(keyword,final_set,length)
         print('New password generated')
         #update view with the new password
-        self.main_frame.set_password_lbl(self.current_password.value)
+        self.main_frame.set_password(self.current_password.value)
                 
     #queries the model and build the charset to generate new random password
     def build_set(self, ckbs_status):

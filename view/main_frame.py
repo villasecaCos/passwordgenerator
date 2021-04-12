@@ -19,9 +19,8 @@ from view.panels.panel_buttons import PanelButtons
 
 class MainFrame(tk.Tk):
     
-   
     #Main window geometry
-    WINDOW_SIZE = ['400','400']#[x,y] in pixels
+    GEOMETRY = [400,350]#[width,height] in pixels
     PADX = 5 #horizontal distance between 2 widgets
     PADY = 5 #vertical distance between 2 widgets
     # options for widgets
@@ -32,10 +31,10 @@ class MainFrame(tk.Tk):
         self.controller = controller
         self.keys = keys
         self.title('Password generator')
-        self.geometry('x'.join(MainFrame.WINDOW_SIZE))#set the dimension of the windo
+        self.geometry(self.convert_w_h())#set the dimension of the windo
         self.panel_ckbs = None
         self.panel_opt = None
-        self.lbl = None #label to display new password
+        self.ent_output = tk.StringVar() #entry to display new password
         self.image_copy = None#image on top of the copy button
         self.create_window()
         
@@ -73,16 +72,21 @@ class MainFrame(tk.Tk):
         self.panel_opt = PanelOptionMenu(self)
         self.panel_buttons = PanelButtons(self)
         #Label for the generated password
-        self.lbl = tk.Label(master = self,text='')   
-        self.lbl.pack(pady = self.PADY, padx = self.PADX)
+        ent = tk.Entry(master = self,text=self.ent_output
+                       ,width=30, state=MainFrame.READONLY)   
+        ent.pack(pady = self.PADY, padx = self.PADX)
     
-    def set_password_lbl(self, new_password):
-        self.lbl.config(text=new_password)
+    def set_password(self, new_password):
+        self.ent_output.set(new_password)
 
                
     def error(self,error_code):
         if(error_code == 0):
             print('Not password available to copy')
+    
+    def convert_w_h(self):
+        
+        return 'x'.join(map(str, MainFrame.GEOMETRY))
             
     
 if __name__ == '__main__':
