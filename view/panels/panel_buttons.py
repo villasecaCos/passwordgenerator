@@ -27,8 +27,13 @@ class PanelButtons(tk.Frame):
                      ,command = self.main_frame.notify_controller)
         btn.pack(pady = self.PADY,side=tk.LEFT)
         # Button to copy the generated password to the clipboard
-        self.image  = tk.PhotoImage(file = self.IMAGES_PATH+'copy3.png', master = frm)
-        btn_copy = tk.Button(master = frm, command = self.main_frame.copy_password
+        try:
+            self.image  = tk.PhotoImage(file = self.IMAGES_PATH+'copy3.png', master = frm)
+        except:
+            print("couldn't open copy3.png no such file")
+            print("try to run file from main.py")
+        finally:
+            btn_copy = tk.Button(master = frm, command = self.main_frame.copy_password
                     , height = 23, width = 23, image = self.image)
-        btn_copy.pack(side=tk.LEFT,pady = self.PADY)
-        self.pack()
+            btn_copy.pack(side=tk.LEFT,pady = self.PADY)
+            self.pack()

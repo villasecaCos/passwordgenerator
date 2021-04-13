@@ -14,7 +14,7 @@ import tkinter as tk
 import logging
 from view.panels.panel_ckbs import PanelCkbs
 from view.panels.panel_field import PanelField
-from view.panels.panel_optionmenu import PanelCombobox
+from view.panels.panel_combobox import PanelCombobox
 from view.panels.panel_buttons import PanelButtons
 
 
@@ -24,7 +24,7 @@ logger.setLevel(logging.DEBUG)
 FORMAT = '%(asctime)s:%(module)s:%(levelname)s:%(message)s'
 formatter = logging.Formatter(FORMAT)
 
-file_handler = logging.FileHandler('view.log')
+file_handler = logging.FileHandler('view/view.log')
 file_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
@@ -59,6 +59,7 @@ class MainFrame(tk.Tk):
     def notify_controller(self):
         logger.info('Notifying updates to controller')
         ckbs_vars = getattr(self.panel_ckbs,'ckbs_vars')
+        logger.debug(self.panel_ckbs.get_ckbs_status())
         keyword_var = getattr(self.panel_field,'field')
         keyword = keyword_var.get()
         if keyword is None:
@@ -91,8 +92,8 @@ class MainFrame(tk.Tk):
         self.panel_opt = PanelCombobox(self)
         self.panel_buttons = PanelButtons(self)
         #Label for the generated password
-        ent = tk.Entry(master = self,text=self.ent_output
-                       ,width=30, state=MainFrame.READONLY)   
+        ent = tk.Entry(master = self,text=self.ent_output,width=30
+                       , state=MainFrame.READONLY)   
         ent.pack(pady = self.PADY, padx = self.PADX)
     
     def set_password(self, new_password):

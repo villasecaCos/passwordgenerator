@@ -14,7 +14,7 @@ logger.setLevel(logging.DEBUG)
 FORMAT = '%(asctime)s:%(module)s:%(levelname)s:%(message)s'
 formatter = logging.Formatter(FORMAT)
 
-file_handler = logging.FileHandler('model.log')
+file_handler = logging.FileHandler('model/model.log')
 file_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
@@ -33,11 +33,15 @@ class FileManager():
         self.load_sets()
     
     def load_sets(self):
-        with open(FileManager.files_path+'sets.txt','r') as sets:
-            for _set in sets:
-                key_value = _set.split()
-                self.set_space[key_value[0]] = set(key_value[1])
-        logger.debug(f'keys loaded are: {self.set_space.keys()}')
+        try:
+            with open(FileManager.files_path+'sets.txt','r') as sets:
+                for _set in sets:
+                    key_value = _set.split()
+                    self.set_space[key_value[0]] = set(key_value[1])
+                    logger.debug(f'set {key_value[0]} composed by '
+                                        + f'[{key_value[1]}]')
+        except FileNotFoundError:
+            logger.exception('try to run project from main.py')
 
     def get_set(self, key):  
         logger.info(f'Access to set: {key}')

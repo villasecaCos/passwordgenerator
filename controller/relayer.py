@@ -21,7 +21,7 @@ logger.setLevel(logging.DEBUG)
 FORMAT = '%(asctime)s:%(module)s:%(levelname)s:%(message)s'
 formatter = logging.Formatter(FORMAT)
 
-file_handler = logging.FileHandler('controller.log')
+file_handler = logging.FileHandler('controller/controller.log')
 file_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
@@ -55,11 +55,11 @@ class Relayer():
     def build_set(self, ckbs_status):
         final_set = self.file_manager.default
         logger.info('Acessing model sets')
-        for key,_var in ckbs_status.items():
-            if _var.get() == 1 and key != 'exclude':
+        for key,var in ckbs_status.items():
+            if var.get() == 1 and key != 'exclude':
                 #concatenate selected sets
                 final_set = final_set.union(self.file_manager.get_set(key))
-            elif _var.get() == 1 and key == 'exclude':
+            elif var.get() == 1 and key == 'exclude':
                 logger.info('Exclude option activated')
                 final_set = final_set.symmetric_difference(self.file_manager.get_set(key))
         return final_set

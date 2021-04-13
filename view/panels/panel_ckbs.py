@@ -43,7 +43,6 @@ class PanelCkbs(tk.Frame):
         return dic
     
     def create_panel(self):
-        print("Creating checkbuttons panel")
         for label,button_label,key in zip(self.labels,self.button_labels,self.keys):
             self.add_checkbox(label,button_label,key)
         self.pack()
@@ -60,5 +59,11 @@ class PanelCkbs(tk.Frame):
         frm.pack(padx = self.PADX,pady = self.PADY)
         lbl.pack(side=tk.LEFT,padx = self.PADX)
         ck_numbers.pack(side=tk.LEFT)
+    
+    def get_ckbs_status(self):
+        ckbs = ''
+        for key,value in self.ckbs_vars.items():
+            ckbs += ' '+key+': '+str(value.get())
+        return ckbs
     
     
