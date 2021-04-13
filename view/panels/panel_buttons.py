@@ -11,7 +11,7 @@ import tkinter as tk
 class PanelButtons(tk.Frame):
     
     PADX,PADY = 5,5
-    IMAGES_PATH = './../view/panels/images/'
+    IMAGES_PATH = 'view/panels/images/'
     
     def __init__(self,master):
         super().__init__(master)
