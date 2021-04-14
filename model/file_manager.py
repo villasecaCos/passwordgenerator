@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Mar 19 15:30:36 2021
-Stores the user prerences for the passwords,
-and the seed charsets to be input to the password generation process. 
-@author: juan Villaseca
-"""
+  
+''' Module that represents the model of the application. It stores
+the different sets and pass them to the controller when requested.''' 
+
 import logging
 
 logger = logging.getLogger(__name__)
@@ -20,7 +18,26 @@ file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
 class FileManager():
-   
+    """
+    Loads and stores data. Handles request from the controller.
+
+    ...
+
+    Attributes
+    ----------
+    controller : Relayer
+        Instance of Relayer to forward data to the view module. 
+    set_space : Dict
+        Dictionary that stores the sets information. 
+
+    Methods
+    -------
+    load_sets()
+        Load the info in 'sets.txt' to the dictionary set_space. 
+    get_set(key)
+        Returns the value stored in set_space given a key.
+
+    """
     files_path = 'model/files/'
     default = {'a','b','c','d','e','f','g','h','i','j','k'
                ,'l','m','n','o','p','q','r','s','t','u','v'
@@ -33,17 +50,27 @@ class FileManager():
         self.load_sets()
     
     def load_sets(self):
+        '''Read sets from file and stores the info into a dictionary.
+        
+        Raise
+        ----------
+        FileNotFoundError
+            when the path to sets file is not known
+        '''
         try:
-            with open(FileManager.files_path+'sets.txt','r') as sets:
-                for _set in sets:
+            file = open(FileManager.files_path+'sets.txt','r') 
+        except FileNotFoundError:
+            logger.exception('try to run project from main.py')
+        else: 
+            with file:
+                for _set in file:
                     key_value = _set.split()
                     self.set_space[key_value[0]] = set(key_value[1])
                     logger.debug(f'set {key_value[0]} composed by '
                                         + f'[{key_value[1]}]')
-        except FileNotFoundError:
-            logger.exception('try to run project from main.py')
-
+                    
     def get_set(self, key):  
+        '''Access the set_space attribute to return requested set.'''
         logger.info(f'Access to set: {key}')
         return self.set_space[key]
     

@@ -1,14 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 16 16:07:35 2021
-
-The controller collects the preferences of the user from the View,
-collect the value of that preferences of the Model and creates a new
-password. 
-
-@author: juan Villaseca
-"""
+'''Represents the controller of the application. It forwards 
+information from the model to the view, and viceversa. It also creates the new
+passwords.'''
 
 import logging
 from controller.password import Password
@@ -27,6 +21,28 @@ file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
 class Relayer():
+    """
+    It coordinates the view and the model. Creates the new passwords. 
+    ...
+
+    Attributes
+    ----------
+    file_manager : FileManager
+        Instance of the model. 
+    keys : dict_keys
+        keys of the underlying data model(a dictionary) of the model. 
+    main_frame : MainFrame
+        Instance of the view. 
+
+    Methods
+    -------
+    start()
+        call the view method to render the GUI. 
+    generate_password(keyword,ckbs,length)
+        Returns a new password.
+    build_set(ckbs_status)
+        Returns a set of characters. 
+    """
     
     def __init__(self):
         self.file_manager = FileManager(self)
@@ -37,22 +53,38 @@ class Relayer():
         self.current_password = None
         
     def start(self):
-        #creates the GUI for the user
+        '''calls the view to render GUI'''
         self.main_frame.display_panel()
     
-    # generate password pipeline
+   
     def generate_password(self,keyword,ckbs,length):
+        '''Creates a new password by creating a Password instance
+        and  forwards it to the view'''
         #collecting parameteres from the view
         final_set = self.build_set(ckbs)
-        length = int(length)
+        length = int(length)#combobox returns strings
          #Create new password and store it
         self.current_password = Password(keyword,final_set,length)
         #update view with the new password
         logger.info('Delivering new password to view')
-        self.main_frame.set_password(self.current_password.value)
+        self.main_frame.set_password(getattr(self.current_password,'value'))
                 
-    #queries the model and build the charset to generate new random password
+    
     def build_set(self, ckbs_status):
+        '''extract setting selected from the view and queries
+        the model to build the final charset to 
+        create the new password.
+        
+        Parameters
+        ----------
+        ckbs_status : dict
+        dict containing the keys and the intVar variables of the view. 
+        
+        Returns
+        ----------
+        final_set : set
+        set containing all the characters to create the new password. 
+        '''
         final_set = self.file_manager.default
         logger.info('Acessing model sets')
         for key,var in ckbs_status.items():

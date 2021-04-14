@@ -1,14 +1,35 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Apr  5 12:52:51 2021
-
-@author: juan
+Represents the panel of the fields
 """
 import tkinter as tk
 
 class PanelField(tk.Frame):
-    
+    """
+    Panel containing fields (Label and Entry widgets). 
+    ...
+    Class Attributes
+    ----------
+    PADX : int
+        horizontal padding between two widgets. 
+    PADY : int
+        vertical padding between two widgets. 
+    labels : list
+        list of labels value to display on the panel. 
+      
+    Attributes
+    ----------
+    field : StringVar
+        Stores the input of the Entries. 
+
+    Methods
+    -------
+    create_panel()
+        Appends the panel to the main window. 
+    add_field(name)
+        create one field and appends it to the panel.
+    """
     PADX,PADY = 5,5
     
     labels = [
@@ -17,24 +38,25 @@ class PanelField(tk.Frame):
     
     def __init__(self, master):
         super(). __init__(master=master)
-        self.master = master
         self.field = tk.StringVar()
         self.create_panel()
     
     def create_panel(self):
+        '''create all fields and append to main window.'''
         for i in self.labels:
             self.add_field(i)
-        self.pack()
+        self.pack() 
             
-    #create a label and entry wideget in the root window
+   
     def add_field(self,name):
-         #container for field
+         '''Create a field with padding specifications'''
+         # create container for field
          frm = tk.Frame(master=self)
-         #add frame to the window
+         # add container to the panel
          frm.pack(padx = self.PADX, pady = self.PADY)
-         # master parameter adds a widget to a frame
+         # create field
          lbl_pattern = tk.Label(master = frm, text=name, padx = self.PADX)
          ent_pattern = tk.Entry(master = frm, textvariable = self.field) 
-         # place the entry at the right side of the label
+         # add field to container
          lbl_pattern.pack(side=tk.LEFT)
          ent_pattern.pack(side=tk.LEFT)
