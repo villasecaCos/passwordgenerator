@@ -37,8 +37,7 @@ class PanelButtons(tk.Frame):
         self.main_frame = master # to notify when event triggers
         self.image = None
         self.create_panel()
-        
-        
+           
     def create_panel(self):
         '''Create buttons and append them to the panel.
         

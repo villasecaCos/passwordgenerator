@@ -80,8 +80,11 @@ class MainFrame(tk.Tk):
         super().__init__()
         self.controller = controller
         self.keys = keys 
+        
         self.title('Password generator')
         self.geometry(self.convert_w_h())
+        self.resizable(0,0)
+        
         self.panel_ckbs = None
         self.panel_field = None
         self.panel_opt = None
@@ -136,17 +139,23 @@ class MainFrame(tk.Tk):
         self.panel_opt = PanelCombobox(self)
         self.panel_buttons = PanelButtons(self)
         
+        # container for the entry
+        container = tk.Frame(self)
+        container.pack()
         # scrollbar to avoid length issues
-        sb = tk.Scrollbar(master = self, orient=tk.HORIZONTAL)
+        sb = tk.Scrollbar(master = container, orient=tk.HORIZONTAL)
         sb.pack(side="bottom", fill="x")
+        
         # entry for the generated password
-        ent = tk.Entry(master = self,text=self.ent_output
-                       ,width=MainFrame.ENT_WIDTH
-                       ,state=MainFrame.READONLY,xscrollcommand=sb.set)   
+        ent = tk.Entry(master = container,text=self.ent_output
+                       , width=MainFrame.ENT_WIDTH
+                       , state=MainFrame.READONLY, xscrollcommand=sb.set)  
+        ent.focus()
         ent.insert("end", str(dir(tk.Scrollbar)))
         ent.pack(pady = self.PADY, padx = self.PADX)
-        
+         
         sb.config(command=ent.xview)
+        ent.config()
     
     def set_password(self, new_password):
         """Update the entry with the new password."""
