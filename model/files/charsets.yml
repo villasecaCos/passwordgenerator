@@ -1,0 +1,9 @@
+
+# Dictionary containing sets to generate random passwords
+
+numbers: 0123456789
+uppercase: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+special: $~%&¬/()=!|@#?¿^+*{}-¡
+exclude: ¡Iil|o0O-pqLJ
+
+

@@ -5,6 +5,7 @@
 the different sets and pass them to the controller when requested.''' 
 
 import logging
+import yaml
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -63,12 +64,9 @@ class FileManager():
             logger.exception('try to run project from main.py')
         else: 
             with file:
-                for _set in file:
-                    key_value = _set.split()
-                    self.set_space[key_value[0]] = set(key_value[1])
-                    logger.debug(f'set {key_value[0]} composed by '
-                                        + f'[{key_value[1]}]')
-                    
+                parsed_file = yaml.safe_load(file)
+                self.set_space = parsed_file
+            
     def get_set(self, key):  
         '''Access the set_space attribute to return requested set.'''
         logger.info(f'Access to set: {key}')
