@@ -11,7 +11,7 @@ from view.panels.panel_ckbs import PanelCkbs
 from view.panels.panel_field import PanelField
 from view.panels.panel_combobox import PanelCombobox
 from view.panels.panel_buttons import PanelButtons
-
+from view.panels.panel_ent import PanelEnt
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -36,8 +36,7 @@ class MainFrame(tk.Tk):
         horizontal padding between two widgets. 
     PADY : int
         vertical padding between two widgets. 
-    READONLY : str
-        block user input in a widget suuch entries or spinboxes. 
+     
         
     Attributes
     ----------
@@ -88,7 +87,6 @@ class MainFrame(tk.Tk):
         self.panel_ckbs = None
         self.panel_field = None
         self.panel_opt = None
-        self.ent_output = tk.StringVar() 
         self.create_window()
         
     def display_panel(self):
@@ -116,7 +114,6 @@ class MainFrame(tk.Tk):
         # send info to controller
         self.controller.generate_password(keyword, ckbs_vars,length )
 
-    
     def copy_password(self): 
         '''Access controller password storage and copies to clipboard'''
         current_password = getattr(self.controller, 'current_password')
@@ -129,7 +126,6 @@ class MainFrame(tk.Tk):
             self.clipboard_append(password_value)
             logger.info('Password copied to clipboard')
             
-    
     def create_window(self):
         '''Append the panels to the main window'''
         logger.info('Making window')
@@ -138,29 +134,12 @@ class MainFrame(tk.Tk):
         self.panel_field = PanelField(self)
         self.panel_opt = PanelCombobox(self)
         self.panel_buttons = PanelButtons(self)
+        self.panel_ent = PanelEnt(self)
         
-        # container for the entry
-        container = tk.Frame(self)
-        container.pack()
-        # scrollbar to avoid length issues
-        sb = tk.Scrollbar(master = container, orient=tk.HORIZONTAL)
-        sb.pack(side="bottom", fill="x")
-        
-        # entry for the generated password
-        ent = tk.Entry(master = container,text=self.ent_output
-                       , width=MainFrame.ENT_WIDTH
-                       , state=MainFrame.READONLY, xscrollcommand=sb.set)  
-        ent.focus()
-        ent.insert("end", str(dir(tk.Scrollbar)))
-        ent.pack(pady = self.PADY, padx = self.PADX)
-         
-        sb.config(command=ent.xview)
-        ent.config()
-    
     def set_password(self, new_password):
         """Update the entry with the new password."""
         logger.info('Displaying new password')
-        self.ent_output.set(new_password)
+        getattr(self.panel_ent, 'output').set(new_password)
 
     def convert_w_h(self): 
         """Converts list of 2 integers into 'n1xn2' string format."""

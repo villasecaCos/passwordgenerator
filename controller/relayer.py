@@ -47,6 +47,8 @@ class Relayer():
     def __init__(self):
         self.file_manager = FileManager(self)
         keys = getattr(self.file_manager,'set_space').keys()
+        if keys is None: 
+            logger.error('Fail to retrieve keys from the model')
         logger.debug('keys from model: '+','.join(keys))
         self.main_frame = MainFrame(self,keys)
         #store the current password shown in the view
