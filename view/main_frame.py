@@ -19,7 +19,7 @@ logger.setLevel(logging.DEBUG)
 FORMAT = '%(asctime)s:%(module)s:%(levelname)s:%(message)s'
 formatter = logging.Formatter(FORMAT)
 
-file_handler = logging.FileHandler('view/view.log')
+file_handler = logging.FileHandler('view/view.log', mode='w')
 file_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)

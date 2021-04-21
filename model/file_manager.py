@@ -13,7 +13,7 @@ logger.setLevel(logging.DEBUG)
 FORMAT = '%(asctime)s:%(module)s:%(levelname)s:%(message)s'
 formatter = logging.Formatter(FORMAT)
 
-file_handler = logging.FileHandler('model/model.log')
+file_handler = logging.FileHandler('model/model.log', mode='w')#path is hardcoded
 file_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
@@ -59,7 +59,7 @@ class FileManager():
             when the path to sets file is not known
         '''
         try:
-            file = open(FileManager.files_path+'sets.txt','r') 
+            file = open(FileManager.files_path+'charsets.yml','r') 
         except FileNotFoundError:
             logger.exception('try to run project from main.py')
         else: 

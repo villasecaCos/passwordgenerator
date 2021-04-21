@@ -15,7 +15,7 @@ logger.setLevel(logging.DEBUG)
 FORMAT = '%(asctime)s:%(module)s:%(levelname)s:%(message)s'
 formatter = logging.Formatter(FORMAT)
 
-file_handler = logging.FileHandler('controller/controller.log')
+file_handler = logging.FileHandler('controller/controller.log', mode='w')
 file_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
@@ -46,6 +46,7 @@ class Relayer():
     
     def __init__(self):
         self.file_manager = FileManager(self)
+        # error
         keys = getattr(self.file_manager,'set_space').keys()
         if keys is None: 
             logger.error('Fail to retrieve keys from the model')
