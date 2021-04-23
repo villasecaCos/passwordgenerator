@@ -1,1 +1,318 @@
-2021-04-22 01:04:26,188:main_frame:INFO:Making window
+2021-04-24 01:22:14,756:main_frame:INFO:Making window
+2021-04-24 01:22:22,850:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:22,850:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 0
+2021-04-24 01:22:22,851:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:22,851:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:22,851:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:22,853:main_frame:INFO:Displaying new password
+2021-04-24 01:22:24,532:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:24,533:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 0
+2021-04-24 01:22:24,533:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:24,534:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:24,534:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:24,536:main_frame:INFO:Displaying new password
+2021-04-24 01:22:24,973:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:24,974:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 0
+2021-04-24 01:22:24,974:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:24,974:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:24,975:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:24,976:main_frame:INFO:Displaying new password
+2021-04-24 01:22:25,628:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:25,629:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 0
+2021-04-24 01:22:25,629:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:25,630:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:25,630:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:25,632:main_frame:INFO:Displaying new password
+2021-04-24 01:22:26,695:main_frame:INFO:Password copied to clipboard
+2021-04-24 01:22:39,077:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:39,077:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 0
+2021-04-24 01:22:39,078:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:39,078:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:39,078:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:39,080:main_frame:INFO:Displaying new password
+2021-04-24 01:22:41,115:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:41,115:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 0
+2021-04-24 01:22:41,116:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:41,116:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:41,116:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:41,118:main_frame:INFO:Displaying new password
+2021-04-24 01:22:41,406:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:41,407:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 0
+2021-04-24 01:22:41,407:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:41,407:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:41,408:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:41,410:main_frame:INFO:Displaying new password
+2021-04-24 01:22:44,089:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:44,090:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:22:44,090:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:44,090:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:44,091:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:44,093:main_frame:INFO:Displaying new password
+2021-04-24 01:22:44,698:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:44,699:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:22:44,699:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:44,699:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:44,700:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:44,702:main_frame:INFO:Displaying new password
+2021-04-24 01:22:45,339:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:45,340:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:22:45,340:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:45,340:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:45,341:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:45,343:main_frame:INFO:Displaying new password
+2021-04-24 01:22:47,140:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:47,141:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:47,141:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:47,141:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:47,142:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:47,144:main_frame:INFO:Displaying new password
+2021-04-24 01:22:47,671:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:47,671:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:47,672:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:47,672:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:47,672:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:47,674:main_frame:INFO:Displaying new password
+2021-04-24 01:22:48,101:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:48,101:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:48,102:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:48,102:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:48,102:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:48,104:main_frame:INFO:Displaying new password
+2021-04-24 01:22:48,515:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:48,516:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:48,516:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:48,516:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:48,517:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:48,519:main_frame:INFO:Displaying new password
+2021-04-24 01:22:48,875:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:48,876:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:48,876:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:48,876:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:48,877:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:48,879:main_frame:INFO:Displaying new password
+2021-04-24 01:22:49,231:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:49,232:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:49,232:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:49,232:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:49,233:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:49,235:main_frame:INFO:Displaying new password
+2021-04-24 01:22:49,594:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:49,595:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:49,595:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:49,595:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:49,596:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:49,598:main_frame:INFO:Displaying new password
+2021-04-24 01:22:53,654:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:53,654:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:53,655:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:53,655:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:53,655:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:53,657:main_frame:INFO:Displaying new password
+2021-04-24 01:22:54,711:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:54,712:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:54,712:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:54,712:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:54,713:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:54,715:main_frame:INFO:Displaying new password
+2021-04-24 01:22:55,439:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:55,439:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:55,440:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:55,440:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:55,440:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:55,442:main_frame:INFO:Displaying new password
+2021-04-24 01:22:56,185:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:56,185:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:56,186:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:56,186:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:56,186:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:56,188:main_frame:INFO:Displaying new password
+2021-04-24 01:22:56,722:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:22:56,722:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:22:56,723:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:22:56,723:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:22:56,723:main_frame:DEBUG:sent length 10 to controller
+2021-04-24 01:22:56,725:main_frame:INFO:Displaying new password
+2021-04-24 01:23:02,739:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:02,739:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:23:02,740:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:02,740:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:02,740:main_frame:DEBUG:sent length 27 to controller
+2021-04-24 01:23:02,742:main_frame:INFO:Displaying new password
+2021-04-24 01:23:19,992:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:19,993:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 0 exclude: 1
+2021-04-24 01:23:19,993:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:19,993:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:19,994:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:19,996:main_frame:INFO:Displaying new password
+2021-04-24 01:23:22,667:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:22,668:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:22,668:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:22,668:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:22,669:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:22,671:main_frame:INFO:Displaying new password
+2021-04-24 01:23:24,736:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:24,737:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:24,737:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:24,737:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:24,738:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:24,740:main_frame:INFO:Displaying new password
+2021-04-24 01:23:26,533:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:26,533:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:26,534:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:26,534:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:26,534:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:26,537:main_frame:INFO:Displaying new password
+2021-04-24 01:23:27,034:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:27,035:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:27,035:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:27,035:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:27,036:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:27,038:main_frame:INFO:Displaying new password
+2021-04-24 01:23:27,401:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:27,402:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:27,402:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:27,402:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:27,403:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:27,405:main_frame:INFO:Displaying new password
+2021-04-24 01:23:28,001:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:28,001:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:28,002:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:28,002:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:28,002:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:28,005:main_frame:INFO:Displaying new password
+2021-04-24 01:23:28,532:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:28,533:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:28,533:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:28,533:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:28,534:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:28,536:main_frame:INFO:Displaying new password
+2021-04-24 01:23:29,203:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:29,204:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:29,204:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:29,204:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:29,205:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:29,207:main_frame:INFO:Displaying new password
+2021-04-24 01:23:30,214:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:30,215:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:30,215:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:30,215:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:30,216:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:30,218:main_frame:INFO:Displaying new password
+2021-04-24 01:23:30,820:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:30,821:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:30,821:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:30,821:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:30,822:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:30,824:main_frame:INFO:Displaying new password
+2021-04-24 01:23:31,519:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:31,520:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:31,520:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:31,521:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:31,521:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:31,523:main_frame:INFO:Displaying new password
+2021-04-24 01:23:32,085:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:32,085:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:32,086:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:32,086:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:32,086:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:32,089:main_frame:INFO:Displaying new password
+2021-04-24 01:23:38,353:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:38,354:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:38,354:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:38,354:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:38,355:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:38,357:main_frame:INFO:Displaying new password
+2021-04-24 01:23:40,088:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:40,089:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:40,089:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:40,089:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:40,090:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:40,092:main_frame:INFO:Displaying new password
+2021-04-24 01:23:40,561:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:40,562:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:40,562:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:40,562:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:40,563:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:40,565:main_frame:INFO:Displaying new password
+2021-04-24 01:23:41,523:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:41,524:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:41,524:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:41,524:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:41,525:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:41,527:main_frame:INFO:Displaying new password
+2021-04-24 01:23:42,878:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:42,879:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:42,879:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:42,879:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:42,880:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:42,882:main_frame:INFO:Displaying new password
+2021-04-24 01:23:43,087:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:43,088:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:43,088:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:43,088:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:43,088:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:43,091:main_frame:INFO:Displaying new password
+2021-04-24 01:23:44,102:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:44,102:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:44,102:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:44,103:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:44,103:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:44,105:main_frame:INFO:Displaying new password
+2021-04-24 01:23:44,307:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:44,308:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:44,308:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:44,308:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:44,309:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:44,311:main_frame:INFO:Displaying new password
+2021-04-24 01:23:44,466:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:44,467:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:44,467:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:44,467:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:44,467:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:44,470:main_frame:INFO:Displaying new password
+2021-04-24 01:23:44,660:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:44,661:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:44,661:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:44,661:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:44,662:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:44,664:main_frame:INFO:Displaying new password
+2021-04-24 01:23:44,829:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:44,830:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:44,830:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:44,830:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:44,830:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:44,833:main_frame:INFO:Displaying new password
+2021-04-24 01:23:44,967:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:44,968:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:44,968:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:44,968:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:44,968:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:44,971:main_frame:INFO:Displaying new password
+2021-04-24 01:23:45,135:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:45,136:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:45,136:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:45,136:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:45,136:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:45,139:main_frame:INFO:Displaying new password
+2021-04-24 01:23:45,295:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:45,296:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:45,296:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:45,296:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:45,296:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:45,299:main_frame:INFO:Displaying new password
+2021-04-24 01:23:45,478:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:45,479:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:45,479:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:45,479:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:45,479:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:45,482:main_frame:INFO:Displaying new password
+2021-04-24 01:23:45,660:main_frame:INFO:Notifying updates to controller
+2021-04-24 01:23:45,661:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-24 01:23:45,661:main_frame:DEBUG:sent keyword ROGER to controller
+2021-04-24 01:23:45,661:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-24 01:23:45,662:main_frame:DEBUG:sent length 16 to controller
+2021-04-24 01:23:45,664:main_frame:INFO:Displaying new password
+ 01:23:45,664:main_frame:INFO:Displaying new password
+ 01:23:45,664:main_frame:INFO:Displaying new password
+ 01:23:45,664:main_frame:INFO:Displaying new password
+ 01:23:45,664:main_frame:INFO:Displaying new password

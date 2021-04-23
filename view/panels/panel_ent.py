@@ -48,12 +48,6 @@ class PanelEnt(tk.Frame):
         
     def create_panel(self):
         '''create ent to display password and append entry.'''
-        for i in self.labels:
-            self.add_field(i)
-        self.pack() 
-              
-    def add_field(self,name):
-        '''Create a field with padding specifications'''
         # container for the entry
         container = tk.Frame(self)
         container.pack()
@@ -71,3 +65,8 @@ class PanelEnt(tk.Frame):
          
         sb.config(command=self.ent.xview)
         self.ent.config()
+        
+        self.pack()
+              
+   
+        
