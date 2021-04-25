@@ -30,6 +30,7 @@ class PanelButtons(tk.Frame):
         Appends the panel to the main window. 
     """
     PADX,PADY = 5,5
+    panel_PADY = 10
     IMAGES_PATH = 'view/panels/images/'
     
     def __init__(self,master):
@@ -49,7 +50,7 @@ class PanelButtons(tk.Frame):
         # create container
         frm = tk.Frame(self)
         # add container to panel
-        frm.pack()
+        frm.pack(pady = self.panel_PADY)
          # Button to save config and generate password
         btn = tk.Button(master = frm, text = "generate password"
                      ,command = self.main_frame.notify_controller)

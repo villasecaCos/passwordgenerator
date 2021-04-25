@@ -35,6 +35,7 @@ class PanelCombobox(tk.Frame):
         
     """
     PADX,PADY = 5,5
+    panel_PADY = 10
     DEFAULT = 10
     
     labels = [
@@ -48,11 +49,13 @@ class PanelCombobox(tk.Frame):
         
     def create_panel(self):
         '''Create comboboxes and append panel to main window.'''
+        frm = tk.Frame(master=self)
+        frm.pack(padx = self.PADX,pady = self.panel_PADY)
         for label in self.labels:
-            self.add_combobox(label)
+            self.add_combobox(frm, label)
         self.pack()
         
-    def add_combobox(self,name):
+    def add_combobox(self, parent, name):
         '''Create label/combobox and append it to the panel.'''
         # create container of label/combobox
         frm = tk.Frame(master=self)

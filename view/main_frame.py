@@ -69,7 +69,7 @@ class MainFrame(tk.Tk):
         convert format to set the geometry correctly. 
     """
     
-    GEOMETRY = [400,350] # [width,height] 
+    GEOMETRY = [400,400] # [width,height] 
     PADX = 5 
     PADY = 5 
     ENT_WIDTH = 30

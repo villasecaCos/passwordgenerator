@@ -37,6 +37,7 @@ class PanelEnt(tk.Frame):
     """
     
     PADX,PADY = 5,5
+    panel_PADY = 10
     ENT_WIDTH = 30
     READONLY = 'readonly'
      
@@ -50,7 +51,7 @@ class PanelEnt(tk.Frame):
         '''create ent to display password and append entry.'''
         # container for the entry
         container = tk.Frame(self)
-        container.pack()
+        container.pack(pady = self.panel_PADY)
         # scrollbar to avoid length issues
         sb = tk.Scrollbar(master = container, orient=tk.HORIZONTAL)
         sb.pack(side="bottom", fill="x")

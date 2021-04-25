@@ -31,6 +31,7 @@ class PanelField(tk.Frame):
         create one field and appends it to the panel.
     """
     PADX,PADY = 5,5
+    panel_PADY = 10
     
     labels = [
             'keyword'
@@ -43,15 +44,19 @@ class PanelField(tk.Frame):
     
     def create_panel(self):
         '''create all fields and append to main window.'''
+        # create container for all fields
+        frm = tk.Frame(master=self)
+        # add fields to the container
+        frm.pack(pady = self.panel_PADY)
         for i in self.labels:
-            self.add_field(i)
+            self.add_field(frm, i)
         self.pack() 
             
    
-    def add_field(self,name):
+    def add_field(self, parent, name):
          '''Create a field with padding specifications'''
          # create container for field
-         frm = tk.Frame(master=self)
+         frm = tk.Frame(master=parent)
          # add container to the panel
          frm.pack(padx = self.PADX, pady = self.PADY)
          # create field

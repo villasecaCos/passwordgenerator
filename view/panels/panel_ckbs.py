@@ -41,7 +41,7 @@ class PanelCkbs(tk.Frame):
         str parsing to log checkbuttons state. 
     """
     PADX,PADY = 5,5
-    panel_PADY = 20
+    panel_PADY = 10
     
     labels = [
             'Include numbers',
@@ -75,7 +75,7 @@ class PanelCkbs(tk.Frame):
          # create container for all label/checkbox
         frm = tk.Frame(master=self)
         # add container to the panel
-        frm.pack(padx = self.PADX,pady = self.panel_PADY)
+        frm.pack(pady = self.panel_PADY)
         for label,button_label,key in zip(self.labels,self.button_labels,self.keys):
             self.add_checkbox(frm, label, button_label, key)
         self.pack()
