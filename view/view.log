@@ -1,15 +1,231 @@
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
-2021-04-25 08:02:31,039:main_frame:INFO:Making window
+2021-04-26 09:41:46,199:main_frame:INFO:Making window
+2021-04-26 09:42:30,388:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:42:30,389:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:42:30,390:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:42:30,390:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:42:30,391:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:42:30,396:main_frame:INFO:Displaying new password
+2021-04-26 09:43:15,691:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:15,692:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:15,693:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:15,693:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:15,694:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:15,698:main_frame:INFO:Displaying new password
+2021-04-26 09:43:17,844:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:17,845:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:17,845:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:17,846:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:17,846:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:17,851:main_frame:INFO:Displaying new password
+2021-04-26 09:43:18,602:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:18,603:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:18,603:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:18,604:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:18,604:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:18,609:main_frame:INFO:Displaying new password
+2021-04-26 09:43:20,730:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:20,731:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:20,732:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:20,732:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:20,733:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:20,738:main_frame:INFO:Displaying new password
+2021-04-26 09:43:23,181:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:23,182:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:23,183:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:23,183:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:23,184:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:23,189:main_frame:INFO:Displaying new password
+2021-04-26 09:43:23,951:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:23,952:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:23,952:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:23,953:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:23,953:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:23,958:main_frame:INFO:Displaying new password
+2021-04-26 09:43:26,200:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:26,201:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:26,202:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:26,202:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:26,202:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:26,207:main_frame:INFO:Displaying new password
+2021-04-26 09:43:27,074:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:27,075:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:27,076:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:27,076:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:27,077:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:27,082:main_frame:INFO:Displaying new password
+2021-04-26 09:43:28,154:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:28,155:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:28,155:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:28,156:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:28,156:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:28,161:main_frame:INFO:Displaying new password
+2021-04-26 09:43:29,490:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:29,490:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:29,491:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:29,491:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:29,492:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:29,497:main_frame:INFO:Displaying new password
+2021-04-26 09:43:30,208:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:30,209:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:30,209:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:30,210:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:30,210:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:30,215:main_frame:INFO:Displaying new password
+2021-04-26 09:43:31,720:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:31,721:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:31,721:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:31,722:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:31,722:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:31,727:main_frame:INFO:Displaying new password
+2021-04-26 09:43:40,774:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:40,775:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:40,775:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:40,776:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:40,776:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:40,781:main_frame:INFO:Displaying new password
+2021-04-26 09:43:41,675:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:41,676:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:41,676:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:41,677:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:41,677:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:41,682:main_frame:INFO:Displaying new password
+2021-04-26 09:43:42,386:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:42,387:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:42,388:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:42,388:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:42,389:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:42,393:main_frame:INFO:Displaying new password
+2021-04-26 09:43:43,607:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:43,608:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:43,608:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:43,609:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:43,609:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:43,614:main_frame:INFO:Displaying new password
+2021-04-26 09:43:44,407:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:44,408:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:44,408:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:44,409:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:44,409:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:44,414:main_frame:INFO:Displaying new password
+2021-04-26 09:43:45,056:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:45,057:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:45,057:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:45,058:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:45,058:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:45,063:main_frame:INFO:Displaying new password
+2021-04-26 09:43:45,697:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:45,698:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:45,698:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:45,699:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:45,699:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:45,704:main_frame:INFO:Displaying new password
+2021-04-26 09:43:46,914:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:46,915:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:46,915:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:46,916:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:46,916:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:46,921:main_frame:INFO:Displaying new password
+2021-04-26 09:43:48,324:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:48,325:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:48,325:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:48,326:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:48,326:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:48,331:main_frame:INFO:Displaying new password
+2021-04-26 09:43:49,865:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:49,865:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:49,866:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:49,866:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:49,867:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:49,872:main_frame:INFO:Displaying new password
+2021-04-26 09:43:51,277:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:51,278:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:51,279:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:51,279:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:51,279:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:51,285:main_frame:INFO:Displaying new password
+2021-04-26 09:43:52,120:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:52,121:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:52,121:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:52,122:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:52,122:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:52,127:main_frame:INFO:Displaying new password
+2021-04-26 09:43:52,635:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:52,636:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:52,637:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:52,637:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:52,638:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:52,643:main_frame:INFO:Displaying new password
+2021-04-26 09:43:53,469:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:53,470:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:53,470:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:53,471:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:53,471:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:53,476:main_frame:INFO:Displaying new password
+2021-04-26 09:43:54,371:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:54,372:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:54,373:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:54,373:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:54,373:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:54,379:main_frame:INFO:Displaying new password
+2021-04-26 09:43:54,970:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:54,971:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:54,972:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:54,972:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:54,973:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:54,978:main_frame:INFO:Displaying new password
+2021-04-26 09:43:55,475:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:55,476:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:55,476:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:55,477:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:55,477:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:55,482:main_frame:INFO:Displaying new password
+2021-04-26 09:43:56,007:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:56,008:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:56,009:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:56,009:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:56,010:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:56,015:main_frame:INFO:Displaying new password
+2021-04-26 09:43:57,124:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:57,125:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:57,125:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:57,126:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:57,126:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:57,131:main_frame:INFO:Displaying new password
+2021-04-26 09:43:57,996:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:57,997:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:57,997:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:57,998:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:57,998:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:58,003:main_frame:INFO:Displaying new password
+2021-04-26 09:43:59,014:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:59,015:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:59,015:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:59,015:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:59,016:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:59,021:main_frame:INFO:Displaying new password
+2021-04-26 09:43:59,476:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:43:59,477:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:43:59,478:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:43:59,478:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:43:59,478:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:43:59,484:main_frame:INFO:Displaying new password
+2021-04-26 09:44:01,397:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:44:01,398:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:44:01,398:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:44:01,399:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:44:01,399:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:44:01,404:main_frame:INFO:Displaying new password
+2021-04-26 09:44:02,404:main_frame:INFO:Notifying updates to controller
+2021-04-26 09:44:02,405:main_frame:DEBUG: numbers: 1 uppercase: 1 special: 1 exclude: 1
+2021-04-26 09:44:02,405:main_frame:DEBUG:sent keyword dada to controller
+2021-04-26 09:44:02,406:main_frame:WARNING:Passoword needs to be scrolled
+2021-04-26 09:44:02,406:main_frame:DEBUG:sent length 10 to controller
+2021-04-26 09:44:02,411:main_frame:INFO:Displaying new password
+ 09:44:02,411:main_frame:INFO:Displaying new password
+ 09:44:02,411:main_frame:INFO:Displaying new password
+ 09:44:02,411:main_frame:INFO:Displaying new password
+ 09:44:02,411:main_frame:INFO:Displaying new password
+ 09:44:02,411:main_frame:INFO:Displaying new password
+ 09:44:02,411:main_frame:INFO:Displaying new password
+ 09:44:02,411:main_frame:INFO:Displaying new password
+ 09:44:02,411:main_frame:INFO:Displaying new password

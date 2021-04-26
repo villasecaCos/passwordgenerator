@@ -37,7 +37,7 @@ class PanelEnt(tk.Frame):
     """
     
     PADX,PADY = 5,5
-    panel_PADY = 10
+    panel_PADY = 5
     ENT_WIDTH = 30
     READONLY = 'readonly'
      

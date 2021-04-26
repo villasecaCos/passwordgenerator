@@ -31,7 +31,7 @@ class PanelField(tk.Frame):
         create one field and appends it to the panel.
     """
     PADX,PADY = 5,5
-    panel_PADY = 10
+    panel_PADY = 5
     
     labels = [
             'keyword'

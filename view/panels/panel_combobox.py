@@ -35,7 +35,7 @@ class PanelCombobox(tk.Frame):
         
     """
     PADX,PADY = 5,5
-    panel_PADY = 10
+    panel_PADY = 5
     DEFAULT = 10
     
     labels = [

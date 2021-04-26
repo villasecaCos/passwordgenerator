@@ -46,7 +46,6 @@ class Relayer():
     
     def __init__(self):
         self.file_manager = FileManager(self)
-        # error
         keys = getattr(self.file_manager,'set_space').keys()
         if keys is None: 
             logger.error('Fail to retrieve keys from the model')
@@ -54,6 +53,8 @@ class Relayer():
         self.main_frame = MainFrame(self,keys)
         #store the current password shown in the view
         self.current_password = None
+        #store the current options to create new password
+        self.final_set = None
         
     def start(self):
         '''calls the view to render GUI'''
@@ -63,11 +64,12 @@ class Relayer():
     def generate_password(self,keyword,ckbs,length):
         '''Creates a new password by creating a Password instance
         and  forwards it to the view'''
-        #collecting parameteres from the view
-        final_set = self.build_set(ckbs)
+        #use previous config if nothing has changed
+        if ckbs != self.final_set:
+            self.final_set = self.build_set(ckbs)
         length = int(length)#combobox returns strings
          #Create new password and store it
-        self.current_password = Password(keyword,final_set,length)
+        self.current_password = Password(keyword,self.final_set,length)
         #update view with the new password
         logger.info('Delivering new password to view')
         self.main_frame.set_password(getattr(self.current_password,'value'))
@@ -97,8 +99,8 @@ class Relayer():
             elif var.get() == 1 and key == 'exclude':
                 logger.info('Exclude option activated')
                 final_set = final_set.symmetric_difference(self.file_manager.get_set(key))
-        return final_set
-    
+#                logger.debug(final_set)
+        return final_set  
     
 if __name__ == '__main__':
      controller = Relayer()
