@@ -5,6 +5,7 @@ Represents the buttons panel.
 """
 
 import tkinter as tk
+from pathlib import Path
 
 class PanelButtons(tk.Frame):
     """
@@ -31,7 +32,7 @@ class PanelButtons(tk.Frame):
     """
     PADX,PADY = 5,5
     panel_PADY = 10
-    IMAGES_PATH = 'view/panels/images/'
+    IMAGES_FOLDER = Path('view/panels/images/')
     
     def __init__(self,master):
         super().__init__(master)
@@ -55,13 +56,13 @@ class PanelButtons(tk.Frame):
         btn = tk.Button(master = frm, text = "generate password"
                      ,command = self.main_frame.notify_controller)
         btn.pack(pady = self.PADY,side=tk.LEFT)
-        image_name = 'copy3.png'
+        image_path = self.IMAGES_FOLDER/'copy3.png'
         # Button to copy the generated password to the clipboard
         try:
-            self.image  = tk.PhotoImage(file = self.IMAGES_PATH+image_name
+            self.image  = tk.PhotoImage(file = image_path
                                         , master = frm)
         except tk.TclError:
-            print(f"couldn't open {image_name} no such file")
+            print(f"couldn't open {image_path} no such file")
             print("try to run file from main.py")
         finally:
             btn_copy = tk.Button(master = frm

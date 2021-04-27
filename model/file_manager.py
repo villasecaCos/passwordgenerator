@@ -6,6 +6,7 @@ the different sets and pass them to the controller when requested.'''
 
 import logging
 import yaml
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -39,7 +40,7 @@ class FileManager():
         Returns the value stored in set_space given a key.
 
     """
-    files_path = 'model/files/'
+    data_folder = Path('model/files/')
     default = {'a','b','c','d','e','f','g','h','i','j','k'
                ,'l','m','n','o','p','q','r','s','t','u','v'
                ,'w','x','y','z'}
@@ -47,7 +48,7 @@ class FileManager():
     def __init__(self, controller):
         self.controller = controller
         self.set_space = {}
-        logger.info(f'Loding sets from: {FileManager.files_path}')
+        logger.info(f'Loding sets from: {FileManager.data_folder}')
         self.load_sets()
     
     def load_sets(self):
@@ -59,12 +60,13 @@ class FileManager():
             when the path to sets file is not known
         '''
         try:
-            file = open(FileManager.files_path+'charsets.yml','r') 
+            data_file = FileManager.data_folder/'charsets.yml'
+            f = open(data_file,'r') 
         except FileNotFoundError:
             logger.exception('try to run project from main.py')
         else: 
-            with file:
-                parsed_file = yaml.safe_load(file)
+            with f:
+                parsed_file = yaml.safe_load(f)
                 self.set_space = parsed_file
             
     def get_set(self, key):  

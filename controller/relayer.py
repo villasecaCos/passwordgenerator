@@ -33,6 +33,10 @@ class Relayer():
         keys of the underlying data model(a dictionary) of the model. 
     main_frame : MainFrame
         Instance of the view. 
+    current_password: Password
+        Instance of the password, actually, being displayed. 
+    final_set: set
+        the set corresponding to the current options selected. 
 
     Methods
     -------
