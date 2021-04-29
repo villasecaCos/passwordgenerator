@@ -4,8 +4,10 @@
 Represents the checkbuttons panel
 """
 import tkinter as tk
+from view.panels.panel import Panel
 
-class PanelCkbs(tk.Frame):
+
+class PanelCkbs(Panel):
     """
     Panel containing labels/checkbuttons widgets. 
     ...
@@ -40,8 +42,6 @@ class PanelCkbs(tk.Frame):
     get_ckbs_status()
         str parsing to log checkbuttons state. 
     """
-    PADX,PADY = 5,5
-    panel_PADY = 10
     
     labels = [
             'Include numbers',
@@ -57,8 +57,8 @@ class PanelCkbs(tk.Frame):
              '(I,|,O,0..L)',
              ]
      
-    def __init__(self, master,keys):
-        super(). __init__(master=master)
+    def __init__(self, parent, keys):
+        super(). __init__(parent)
         self.keys = keys 
         self.ckbs_vars = self.create_dict(keys)
         self.create_panel()
@@ -75,7 +75,7 @@ class PanelCkbs(tk.Frame):
          # create container for all label/checkbox
         frm = tk.Frame(master=self)
         # add container to the panel
-        frm.pack(pady = self.panel_PADY)
+        frm.pack(pady = Panel.panel_PADY)
         for label,button_label,key in zip(self.labels,self.button_labels,self.keys):
             self.add_component(frm, label, button_label, key)
         self.pack()
@@ -85,13 +85,13 @@ class PanelCkbs(tk.Frame):
         # create container for label/checkbox
         frm = tk.Frame(master=parent)
         # add container to the panel
-        frm.pack(padx = self.PADX,pady = self.PADY)
+        frm.pack(padx = Panel.PADX, pady=Panel.PADY)
         # create label/checkbox
-        lbl = tk.Label(master = frm, text=label, padx = self.PADX)
+        lbl = tk.Label(master=frm, text=label, padx=self.PADX)
         ck_numbers = tk.Checkbutton(master=frm, text=name, onvalue=1
            ,offvalue=0,variable=self.ckbs_vars[key]) 
         # add label/checkbutton to container
-        lbl.pack(side=tk.LEFT,padx = self.PADX)
+        lbl.pack(side=tk.LEFT, padx=Panel.PADX)
         ck_numbers.pack(side=tk.LEFT)
     
     def get_ckbs_status(self):

@@ -7,6 +7,7 @@ Represents the buttons panel.
 import tkinter as tk
 from pathlib import Path
 
+
 class PanelButtons(tk.Frame):
     """
     Panel containing labels/buttons widgets. 
@@ -34,9 +35,9 @@ class PanelButtons(tk.Frame):
     panel_PADY = 10
     IMAGES_FOLDER = Path('view/panels/images/')
     
-    def __init__(self,master):
-        super().__init__(master)
-        self.main_frame = master # to notify when event triggers
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.main_frame = parent # to notify when event triggers
         self.image = None
         self.create_panel()
            

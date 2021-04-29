@@ -5,8 +5,9 @@ Represents panel the combobox-
 """
 import tkinter as tk
 from tkinter import ttk
+from view.panels.panel import Panel
 
-class PanelCombobox(tk.Frame):
+class PanelCombobox(Panel):
     """
     Panel containing combobox widgets. 
     ...
@@ -34,23 +35,21 @@ class PanelCombobox(tk.Frame):
         Create label/combobox, and appends them to the panel. 
         
     """
-    PADX,PADY = 5,5
-    panel_PADY = 5
     DEFAULT = 10
     
     labels = [
             'Length'
             ]
     
-    def __init__(self,master):
-        super(). __init__(master=master)
+    def __init__(self, parent):
+        super(). __init__(parent)
         self.length = tk.StringVar() # Combobox coerce StringVar
         self.create_panel()
         
     def create_panel(self):
         '''Create comboboxes and append panel to main window.'''
         frm = tk.Frame(master=self)
-        frm.pack(padx = self.PADX,pady = self.panel_PADY)
+        frm.pack(padx = Panel.PADX,pady = Panel.panel_PADY)
         for label in self.labels:
             self.add_component(frm, label)
         self.pack()
@@ -59,9 +58,9 @@ class PanelCombobox(tk.Frame):
         '''Create label/combobox and append it to the panel.'''
         # create container of label/combobox
         frm = tk.Frame(master=self)
-        frm.pack(padx = self.PADX,pady = self.PADY)
+        frm.pack(padx = Panel.PADX,pady = Panel.PADY)
         # add label to container
-        lbl = tk.Label(master=frm, text=name, padx=self.PADX)
+        lbl = tk.Label(master=frm, text=name, padx=Panel.PADX)
         lbl.pack(side=tk.LEFT)
         #drop-down menu to choose password length
         options = [x for x in range(6,30)]

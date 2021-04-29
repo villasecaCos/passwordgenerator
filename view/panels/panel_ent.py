@@ -41,8 +41,8 @@ class PanelEnt(tk.Frame):
     ENT_WIDTH = 30
     READONLY = 'readonly'
      
-    def __init__(self,master):
-        super().__init__(master)
+    def __init__(self, parent):
+        super().__init__(parent)
         self.ent = None
         self.output = tk.StringVar()
         self.create_panel()
