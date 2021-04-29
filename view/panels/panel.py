@@ -16,7 +16,7 @@ class Panel(tk.Frame):
     @abstractmethod
     def create_panel(self):
       pass
-  
-    @abc.abstractmethod
-    def area(self):
+    @abstractmethod
+    def add_component(self):
       pass
+  

@@ -77,10 +77,10 @@ class PanelCkbs(tk.Frame):
         # add container to the panel
         frm.pack(pady = self.panel_PADY)
         for label,button_label,key in zip(self.labels,self.button_labels,self.keys):
-            self.add_checkbox(frm, label, button_label, key)
+            self.add_component(frm, label, button_label, key)
         self.pack()
         
-    def add_checkbox(self, parent, label,name,key):
+    def add_component(self, parent, label,name,key):
         '''Create one label/checkbutton and append to the panel.'''
         # create container for label/checkbox
         frm = tk.Frame(master=parent)

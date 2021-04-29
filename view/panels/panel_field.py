@@ -49,11 +49,11 @@ class PanelField(tk.Frame):
         # add fields to the container
         frm.pack(pady = self.panel_PADY)
         for i in self.labels:
-            self.add_field(frm, i)
+            self.add_component(frm, i)
         self.pack() 
             
    
-    def add_field(self, parent, name):
+    def add_component(self, parent, name):
          '''Create a field with padding specifications'''
          # create container for field
          frm = tk.Frame(master=parent)
