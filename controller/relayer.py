@@ -70,7 +70,8 @@ class Relayer():
         and  forwards it to the view'''
         #use previous config if nothing has changed
         if ckbs != self.final_set:
-            self.final_set = self.build_set(ckbs)
+            self.final_set = self.update_set(ckbs)
+            logger.info('password settings not changed')
         length = int(length)#combobox returns strings
          #Create new password and store it
         self.current_password = Password(keyword,self.final_set,length)
@@ -79,7 +80,7 @@ class Relayer():
         self.main_frame.set_password(getattr(self.current_password,'value'))
                 
     
-    def build_set(self, ckbs_status):
+    def update_set(self, ckbs_status):
         '''extract setting selected from the view and queries
         the model to build the final charset to 
         create the new password.
@@ -92,18 +93,23 @@ class Relayer():
         Returns
         ----------
         final_set : set
-        set containing all the characters to create the new password. 
+        Unions on similar sets do not modify the final set.
+        The second case accounts for the cases of deactivating a ckbs. 
+        empty is needed for the first generated password.
         '''
         final_set = self.file_manager.default
         logger.info('Acessing model sets')
         for key,var in ckbs_status.items():
+            current_set = self.file_manager.get_set(key)
+            intersection = final_set.intersection(current_set)
             if var.get() == 1 and key != 'exclude':
-                #concatenate selected sets
-                final_set = final_set.union(self.file_manager.get_set(key))
+                final_set = final_set.union(current_set)
+            elif var.get() == 0 and key != 'exclude':
+                if intersection != set():
+                    final_set = final_set.symmetric_difference(current_set)
             elif var.get() == 1 and key == 'exclude':
                 logger.info('Exclude option activated')
-                final_set = final_set.symmetric_difference(self.file_manager.get_set(key))
-#                logger.debug(final_set)
+                final_set = final_set.symmetric_difference(intersection)
         return final_set  
     
 if __name__ == '__main__':
